@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="BASZ Nuttawut" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+Thai" rel="stylesheet" />
+    <link href="assets/css/main.css?noCache=1.0.7" rel="stylesheet" media="all">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
+    <title>QRCODE - FRANCC</title>
+</head>
+
+<body>
+    <style>
+        body,
+        html {
+            font-family: 'Noto Sans Thai';
+        }
+        
+        .overlay {
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            background: #222;
+            z-index: 99999;
+            opacity: 0.5;
+            display: none;
+        }
+        
+        .overlay__inner {
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        
+        .overlay__content {
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .spinner {
+            width: 75px;
+            height: 75px;
+            display: inline-block;
+            border-width: 2px;
+            border-color: rgba(255, 255, 255, 0.05);
+            border-top-color: rgb(194, 191, 191);
+            animation: spin 1s infinite linear;
+            border-radius: 100%;
+            border-style: solid;
+        }
+        
+        .logo {
+            align-items: center;
+            width: 350px;
+            /* ปรับขนาดโลโก้ตามต้องการ */
+            margin: 0 auto;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+    <div class="overlay">
+        <div class="overlay__inner">
+            <div class="overlay__content"><span class="spinner"></span></div>
+        </div>
+    </div>
+
+    <div style="padding-top: 3.0rem !important;"></div>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-12 col-lg-2"></div>
+
+            <div class="col-12 col-lg-8" id="setting">
+                <div style="padding-top: 2.5rem !important;"></div>
+                <div>
+                    <div class="card-body" style="position:relative; display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; background-color:#fff; border:1px solid rgba(0, 0, 0, 0.125); border-radius:15px; ; box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 16px, rgba(3, 3, 3, 0.08) 0px 2px 20px;">
+                        <h4 class="text-center py-1">QR CODE</h4>
+                        <div style="border-top: 0px dashed;" class="py-2"></div>
+
+
+                        <div id="setting" class="text-center">
+                            <img src="https://img5.pic.in.th/file/secure-sv1/IMG_113245040e91a171a2b2.png" alt="Logo" class="logo">
+                            <br>
+                            <div class="form-group row">
+                                <label for="staticEmail" class="col-sm-4 col-form-label">ชื่อบัญชี</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control-plaintext" value="อนุพงศ์ สีสุข" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="staticEmail" class="col-sm-4 col-form-label">พร้อมเพย์</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control-plaintext" value="0968236010" disabled>
+                                </div>
+                            </div>
+
+                            <label class="form-check-label" for="gridCheck">
+                                กรุณาอ่านกฏของการเดิมพันให้เรียบร้อย ( <a href="#"
+                                    data-toggle="modal" data-target="#exampleModalLong">ตกลง</a> )
+                            </label>
+                            <p></p>
+                            <a href="https://www.facebook.com/Frxnccz">Francc Francc</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-2"></div>
+        </div>
+    </div>
+    </div>
+
+    </br>
+    </br>
+    </br>
+
+    <footer style="position: fixed; left: 0; bottom: 0; width: 100%; border-top: solid #D6E9C6; box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%); background-color: #DFF0D8 !important; color: #3C763D; text-align: center;">
+        <div class="py-2">
+            <h6>Copyright © All Rights Reserved By Francc Francc
+            </h6>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/js/sweetalert.min.js"></script>
+    <script src="assets/js/jQr.js?noCache=1.0.7"></script>
+    <script src="assets/js/isreal.js?noCache=1.0.7"></script>
+</body>
+
+</html>
